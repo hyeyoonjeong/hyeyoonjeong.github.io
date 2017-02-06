@@ -286,13 +286,13 @@ li a:hover{
     text-align: right;
 }
 #aboutMe {
-    background-color: #d39998;
+    background-color: #cccccc;
 }
 #project {
     background-color: #f0f0f0;
 }
 #top {
-    background-color: #4C5364;
+    background-color: #b08998;
     width: 100%;
     margin: 0;
     padding-bottom: 50px;
@@ -307,8 +307,20 @@ li a:hover{
     display: inline-block;
     vertical-align: top;
 }
-.por-image {
-
+.cc_bg {
+    background-color: #f1c39d;
+}
+.h_bg {
+    background-color: #8aaad9;
+}
+.g_bg {
+    background-color: #d68189;
+}
+.p_bg {
+    background-color: #9fd3c2;
+}
+.t_bg {
+    background-color: #c6a49a;
 }
 .por-image img{
     height: 70%;
@@ -412,11 +424,20 @@ header {
     text-align: left;
 }
 footer {
-    background: #aaa;
-    color:white;
+    background: #fafafa;
+    width: 200px;
+    color: #cccccc;
+    margin: 0;
+    padding: 10px;
+    font-size: 10px;
+}
+.footer_copy {
+    text-align: left;
+    padding-left: 50px;
 }
 body{
     font-family: "Source Sans Pro",Helvetica, Arial, sans-serif;
+    margin: 0;
 }
 @media print,
        (min-resolution: 1.25dppx),
