@@ -132,8 +132,42 @@
         <div class="centered line"></div>
         <div class="content">
             <div class="content-item">
+                <!--CC Detail Image-->
+                <div class="single_view" id="chung_choon">
+                    <div class="single_case">
+                        <div class="single-options">
+                            <div class="options-buttons">
+                                <button class="btn-close" onclick="removeDetail('chung_choon')">
+                                    <img src="img/close.png">
+                                </button>
+                            </div>
+                        </div>
+                        <nav class="single-nav">
+                            <span class="nav-prev"><img src="img/prev.png"></span>
+                            <span class="nav-next"><img src="img/next.png"></span>
+                        </nav>
+                        <img src="img/portfolio/cc/cc_0.png" id="test0" onclick="goToNext()">
+                        <img src="img/portfolio/cc/cc_1.png" id="test1" style="display: none">
+                    </div>
+                </div>
+                <div class="single_view" id="health">
+                    <div class="single_case">
+                        <div class="single-options">
+                            <div class="options-buttons">
+                                <button class="btn-close" onclick="removeDetail('health')">
+                                    <img src="img/close.png">
+                                </button>
+                            </div>
+                        </div>
+                        <nav class="single-nav">
+                            <span class="nav-prev"><img src="img/prev.png"></span>
+                            <span class="nav-next"><img src="img/next.png"></span>
+                        </nav>
+                        <img src="img/portfolio/h_cover.png">
+                    </div>
+                </div>
                 <div class="portfolio">
-                    <a class="por-image" href="img/portfolio/lab1.png">
+                    <a class="por-image" onclick="showDetail('chung_choon')">
                         <img src="img/portfolio/cc_cover.png" class="cc_bg">
                     </a>
                     <p class="description">
@@ -142,7 +176,7 @@
                     </p>
                 </div>
                 <div class="portfolio">
-                    <a class="por-image" href="img/portfolio/lab1.png">
+                    <a class="por-image" onclick="showDetail('health')">
                         <img src="img/portfolio/h_cover.png" class="h_bg">
                     </a>
                     <p class="description">
@@ -165,12 +199,12 @@
                     </a>
                     <p class="description">
                         <b>Pouch Checker</b>
-                        AngularJS + Cordova 를 이용한  하이브리드 앱. AWS를 이용한 Node.js 서버와 Spring+Mybatis를 이용한 RestAPI서버
+                        AngularJS + Cordova 를 이용한 하이브리드 앱. AWS를 이용한 Node.js 서버와 Spring+Mybatis를 이용한 RestAPI서버
                     </p>
                 </div>
                 <div class="portfolio">
-                    <a class="por-image" href="img/portfolio/lab3.png">
-                        <img src="img/portfolio/h_cover.png" class="t_bg">
+                    <a class="por-image" href="img/portfolio/this_cover.png">
+                        <img src="img/portfolio/this_cover.png" class="t_bg">
                     </a>
                     <p class="description">
                         <b>This WebPage</b>
@@ -179,7 +213,7 @@
                 </div>
             </div>
         </div>
-        </section>
+    </section>
 
     <footer><p class="footer_copy">&copy; 2017 정혜윤</p></footer>
 </div>

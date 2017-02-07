@@ -6,6 +6,7 @@ $(document).ready(function () {
     $(".mobile-header").click(function () {
         $(".mobile-nav").hide();
     });
+
     var canvas = new Array(6);
     canvas[0] = document.getElementById("circle-java");
     canvas[1] = document.getElementById("circle-js");
@@ -19,6 +20,13 @@ $(document).ready(function () {
         drawCircle(canvas[i], context, data[i]);
     }
 });
-
-
-
+function showDetail(data) {
+    $("#"+data).fadeIn();
+}
+function removeDetail(data) {
+    $("#"+data).fadeOut();
+}
+function goToNext() {
+    $("#test0").hide();
+    $("#test1").fadeIn();
+}
