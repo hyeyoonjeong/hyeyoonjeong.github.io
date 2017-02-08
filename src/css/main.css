@@ -339,7 +339,7 @@ li a:hover{
     background-color: #f0f0f0;
 }
 #top {
-    background-color: #b08998;
+    background-color: #0d3842;
     width: 100%;
     margin: 0;
     padding-bottom: 50px;
@@ -403,7 +403,7 @@ section {
 }
 .name {
     margin: 0 auto;
-    color: #8aaad9;
+    color: #343434;
 }
 .head.item{
     width: 33.3%;
@@ -511,6 +511,7 @@ header {
 .single_case {
     position: absolute;
 }
+
 .single-nav span {
     position: absolute;
     display: block;

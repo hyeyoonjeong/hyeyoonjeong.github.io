@@ -121,6 +121,9 @@
                         <ul class="align-left"><h4>Etc</h4>
                             <li>Git</li>
                             <li>AWS</li>
+                            <li>Photoshop</li>
+                            <li>Excel</li>
+                            <li>PowerPoint</li>
                         </ul>
                     </div>
                 </div>
@@ -143,11 +146,13 @@
                             </div>
                         </div>
                         <nav class="single-nav">
-                            <span class="nav-prev"><img src="img/prev.png"></span>
-                            <span class="nav-next"><img src="img/next.png"></span>
+                            <span class="nav-prev" onclick="goToNext('#cc')"><img src="img/prev.png"></span>
+                            <span class="nav-next" onclick="goToPrev('#cc')"><img src="img/next.png"></span>
                         </nav>
-                        <img src="img/portfolio/cc/cc_0.png" id="test0" onclick="goToNext()">
-                        <img src="img/portfolio/cc/cc_1.png" id="test1" style="display: none">
+                        <img src="img/portfolio/cc/cc_0.png" id="cc0" onclick="goToNext('#cc')">
+                        <img src="img/portfolio/cc/cc_1.png" id="cc1" onclick="goToNext('#cc')" style="display: none">
+                        <img src="img/portfolio/cc/cc_2.png" id="cc2" onclick="goToNext('#cc')" style="display: none">
+                        <img src="img/portfolio/cc/cc_3.png" id="cc3" onclick="goToNext('#cc')" style="display: none">
                     </div>
                 </div>
                 <div class="single_view" id="health">

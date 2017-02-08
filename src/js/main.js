@@ -19,14 +19,34 @@ $(document).ready(function () {
         var context = canvas[i].getContext("2d");
         drawCircle(canvas[i], context, data[i]);
     }
+
 });
+var currentIndex = 0;
+var max_cc = 3;
 function showDetail(data) {
     $("#"+data).fadeIn();
 }
 function removeDetail(data) {
     $("#"+data).fadeOut();
 }
-function goToNext() {
-    $("#test0").hide();
-    $("#test1").fadeIn();
+
+function goToNext(data) {
+    $(data+currentIndex).hide();
+    if(currentIndex < max_cc){
+        currentIndex++;
+    } else {
+        currentIndex = 0;
+    }
+    $(data+currentIndex).fadeIn();
+}
+
+function goToPrev(data) {
+    $(data+currentIndex).hide();
+    if(currentIndex > 0){
+        currentIndex--;
+    } else {
+        currentIndex = max_cc;
+    }
+
+    $(data+ currentIndex).fadeIn();
 }
