@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 });
 var currentIndex = 0;
-var max_cc = 3;
+var max = 3;
 function showDetail(data) {
     $("#"+data).fadeIn();
 }
@@ -32,7 +32,7 @@ function removeDetail(data) {
 
 function goToNext(data) {
     $(data+currentIndex).hide();
-    if(currentIndex < max_cc){
+    if(currentIndex < max){
         currentIndex++;
     } else {
         currentIndex = 0;
@@ -45,7 +45,7 @@ function goToPrev(data) {
     if(currentIndex > 0){
         currentIndex--;
     } else {
-        currentIndex = max_cc;
+        currentIndex = max;
     }
 
     $(data+ currentIndex).fadeIn();

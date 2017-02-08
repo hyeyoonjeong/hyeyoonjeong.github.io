@@ -165,10 +165,32 @@
                             </div>
                         </div>
                         <nav class="single-nav">
-                            <span class="nav-prev"><img src="img/prev.png"></span>
-                            <span class="nav-next"><img src="img/next.png"></span>
+                            <span class="nav-prev" onclick="goToPrev('#h')"><img src="img/prev.png"></span>
+                            <span class="nav-next" onclick="goToNext('#h')"><img src="img/next.png"></span>
                         </nav>
-                        <img src="img/portfolio/h_cover.png">
+                        <img src="img/portfolio/h/h_0.png" id="h0" onclick="goToNext('#h')">
+                        <img src="img/portfolio/h/h_1.png" id="h1" onclick="goToNext('#h')" style="display: none">
+                        <img src="img/portfolio/h/h_2.png" id="h2" onclick="goToNext('#h')" style="display: none">
+                        <img src="img/portfolio/h/h_3.png" id="h3" onclick="goToNext('#h')" style="display: none">
+                    </div>
+                </div>
+                <div class="single_view" id="getto">
+                    <div class="single_case">
+                        <div class="single-options">
+                            <div class="options-buttons">
+                                <button class="btn-close" onclick="removeDetail('health')">
+                                    <img src="img/close.png">
+                                </button>
+                            </div>
+                        </div>
+                        <nav class="single-nav">
+                            <span class="nav-prev" onclick="goToPrev('#g')"><img src="img/prev.png"></span>
+                            <span class="nav-next" onclick="goToNext('#g')"><img src="img/next.png"></span>
+                        </nav>
+                        <img src="img/portfolio/g/g_0.png" id="g0" onclick="goToNext('#g')">
+                        <img src="img/portfolio/g/g_1.png" id="g1" onclick="goToNext('#g')" style="display: none">
+                        <img src="img/portfolio/g/g_2.png" id="g2" onclick="goToNext('#g')" style="display: none">
+                        <img src="img/portfolio/g/g_3.png" id="g3" onclick="goToNext('#g')" style="display: none">
                     </div>
                 </div>
                 <div class="portfolio">
@@ -190,7 +212,7 @@
                     </p>
                 </div>
                 <div class="portfolio">
-                    <a class="por-image" href="img/portfolio/lab2.png">
+                    <a class="por-image" onclick="showDetail('getto')">
                         <img src="img/portfolio/g_cover.png" class="g_bg">
                     </a>
                     <p class="description">
@@ -199,7 +221,7 @@
                     </p>
                 </div>
                 <div class="portfolio">
-                    <a class="por-image" href="img/portfolio/lab3.png">
+                    <a class="por-image" onclick="showDetail('pouch_checker')">
                         <img src="img/portfolio/p_cover.png" class="p_bg">
                     </a>
                     <p class="description">
